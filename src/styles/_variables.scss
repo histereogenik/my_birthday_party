@@ -1,6 +1,7 @@
 $bgColorMain: #181818;
 $bgColorButton: linear-gradient(90deg, #1473D0, #7D2843);
-$bgColorGrayGradient: linear-gradient(to bottom, $bgColorMain, transparent);
+$bgColorGrayGradientTop: linear-gradient(to bottom, $bgColorMain, transparent);
+$bgColorGrayGradientBot: linear-gradient(to top, $bgColorMain, transparent);
 $textColorPrime: #fff;
 $textColorSecondary: #CFCFCF;
 $textColorInsideGradient: radial-gradient(circle at center, $textColorPrime, $textColorPrime, #606060);

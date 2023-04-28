@@ -1,0 +1,31 @@
+@use 'variables';
+
+.event {
+    padding: 5.6vw;
+
+    .container {
+        display: flex;
+        gap: 4vw;
+    }
+
+    &--image-left {
+        .container {
+            flex-direction: row-reverse;
+        }
+    }
+
+    &__details {
+        &__title {
+            margin-bottom: 1vw;
+        }
+    }
+
+    .title--left {
+        text-align: right;
+    }
+
+    &__image {
+        max-width: 40vw;
+        border-radius: 10px;
+    }
+}
