@@ -1,0 +1,65 @@
+@use 'variables';
+
+.hero {
+    padding: 5.6vw;
+    background-image: 
+        variables.$bgColorGrayGradient,
+        url("../images/quantum_nataraj.jpg");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    position: relative;
+
+
+    .container {
+        position: relative;
+    }
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: variables.$bgColorMain;
+        content: '';
+        opacity: .7;
+    }
+
+    &__attend {
+        margin-bottom: 8vw;
+
+        &__title {
+            margin-bottom: 2vw;
+        }
+    }
+
+    &__countdown {
+        padding-right: 40vw;
+        text-align: center;
+
+        &__container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        &__time {
+            min-width: 100px;
+            width: 8vw;
+            padding: 24px;
+            margin-top: 12px;
+            border: 1px groove variables.$textColorSecondary;
+            border-radius: 8px;
+            background-color: #1818188b;
+
+            &__item {
+                display: block;
+            }
+
+            .text--small {
+                margin-top: 4px;
+                font-size: clamp(8px, 1vw, 16px);
+            }
+        }
+    }
+}

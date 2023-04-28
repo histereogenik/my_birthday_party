@@ -1,5 +1,6 @@
 @use 'variables';
 @use 'header';
+@use 'hero';
 @use 'components/buttons';
 
 * {
@@ -9,8 +10,41 @@
     list-style: none;
     color: variables.$textColorPrime;
     font-family: 'Bruno Ace', cursive;
+    cursor: default;
 }
 
 body {
-    background-color: variables.$bgColor;
+    background-color: variables.$bgColorMain;
+}
+
+.text {
+    font-size: variables.$textFontSize;
+    letter-spacing: 1px;
+    font-weight: normal;
+
+    &--small {
+        font-size: variables.$textFontSizeSmall;
+        color: variables.$textColorSecondary;
+    }
+
+    &--big {
+        font-size: variables.$textFontSizeBig;
+        line-height: 5vw;
+
+        @media (max-width: 1024px) {
+            line-height: 48px;
+        }
+    }
+
+    &--highlight {
+        background-image: variables.$bgColorButton;
+        padding: 12px 24px;
+        border-radius: 50px;
+    }
+
+    &--gradient {
+        background-image: variables.$textColorInsideGradient;
+        background-clip: text;
+        color: transparent;
+    }
 }
