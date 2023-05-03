@@ -8,6 +8,10 @@
         gap: 4vw;
     }
 
+    &--gradient-bot {
+        background-image: variables.$bgColorToFooterGradient;
+    }
+
     &--image-left {
         .container {
             flex-direction: row-reverse;

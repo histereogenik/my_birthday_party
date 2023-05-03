@@ -2,6 +2,7 @@
 @use 'header';
 @use 'hero';
 @use 'event';
+@use 'footer';
 @use 'components/buttons';
 
 * {
@@ -12,6 +13,7 @@
     color: variables.$textColorPrime;
     font-family: 'Bruno Ace', cursive;
     cursor: default;
+    overflow-x: hidden;
 }
 
 body {
