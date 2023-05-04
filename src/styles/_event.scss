@@ -32,4 +32,28 @@
         max-width: 40vw;
         border-radius: 10px;
     }
+
+    @media (max-width: 1024px) {
+        padding: 24px;
+
+        .container {
+            display: block;
+        }
+
+        &__details {
+            margin-bottom: 24px;
+            &__title {
+                margin-bottom: 18px;
+                text-align: center;
+            }
+        }
+
+        &__image {
+            max-width: 100%;
+        }
+
+        .title--left {
+            text-align: left;
+        }
+    }
 }

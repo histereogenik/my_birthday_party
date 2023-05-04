@@ -64,4 +64,48 @@
             }
         }
     }
+
+    @media (min-width: 641px) and (max-width: 1023px) {
+        &__countdown {
+            padding-right: 0;
+    
+            &__container {
+                justify-content: center;
+                gap: 24px;
+            }
+        }
+    }
+
+    @media (max-width: 640px) {
+        padding: 12px 24px;
+
+        &__attend {
+            margin-bottom: 36px;
+    
+            &__title {
+                margin-bottom: 32px;
+            }
+        }
+
+        &__countdown {
+            padding: 12px 8px;
+            overflow: hidden;
+            border: 1px groove variables.$textColorSecondary;
+            border-radius: 8px;
+            background-color: #1818188b;
+    
+            &__time {
+                min-width: 0;
+                width: 100%;
+                padding: 0;
+                border: none;
+                border-radius: 0;
+                background-color: transparent;
+
+                .text--small {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
 }

@@ -16,4 +16,15 @@
         display: flex;
         gap: 8vw;
     }
+
+    @media (max-width: 640px) {
+        .container {
+            display: block;
+            text-align: center;
+        }
+
+        &__links {
+            display: none;
+        }
+    }
 }

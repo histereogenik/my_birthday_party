@@ -34,7 +34,7 @@ body {
         font-size: variables.$textFontSizeBig;
         line-height: 5vw;
 
-        @media (max-width: 1024px) {
+        @media (max-width: 1023px) {
             line-height: 48px;
         }
     }
@@ -49,5 +49,28 @@ body {
         background-image: variables.$textColorInsideGradient;
         background-clip: text;
         color: transparent;
+    }
+
+    @media (min-width: 641px) and (max-width: 1023px) {    
+        &--highlight {
+            padding: 8px 16px;
+        }
+    }
+
+    @media (max-width: 640px) {
+        font-size: 22px;
+
+        &--small {
+            font-size: 16px;
+        }
+    
+        &--big {
+            font-size: 24px;
+            line-height: 44px;
+        }
+    
+        &--highlight {
+            padding: 8px 16px;
+        }
     }
 }
